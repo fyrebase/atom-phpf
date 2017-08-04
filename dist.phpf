@@ -4,13 +4,10 @@
 # found in the phpF package settings panel
 
 autoAlign: true
-cache: false
-cacheFilename: ""
 cakePhp: false
 constructorType: "disabled"
 excludePasses: ""
 indentWithSpaceSize: 2 # false to disable
-noBackup: true
 passes: [
 	# SAMPLE PASSES
 	# ----------------
