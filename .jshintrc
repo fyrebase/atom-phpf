@@ -1,0 +1,16 @@
+{
+	"asi" : true,
+	"browser" : true,
+	"devel" : true,
+	"eqeqeq" : true,
+	"globals" : {
+		"atom": true
+	},
+	"maxerr" : 50,
+	"node" : true,
+	"nonbsp" : true,
+	"predef" : [],
+	"singleGroups" : true,
+	"undef" : true,
+	"unused" : true
+}

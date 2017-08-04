@@ -1,0 +1,25 @@
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Run phpF'
+      'command': 'phpf:format'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'phpf'
+      'submenu': [
+        {
+          'label': 'Create Project Config'
+          'command': 'phpf:create-project-config'
+        }
+        {
+          'label': 'Format'
+          'command': 'phpf:format'
+        }
+      ]
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+# phpF project configuration
+# ---------------------------------
+# The below will override any options
+# found in the phpF package settings panel
+
+autoAlign: true
+cache: false
+cacheFilename: ""
+cakePhp: false
+constructorType: "disabled"
+excludePasses: ""
+indentWithSpaceSize: 2 # false to disable
+noBackup: true
+passes: [
+	# SAMPLE PASSES
+	# ----------------
+	# Find out what passess your copy of
+	# phpfmt supports with `php /path/to/fmt.phar --list`
+	"ReindentSwitchBlocks"
+	"OrganizeClass"
+	"OrderMethod"
+	"OrderAndRemoveUseClauses"
+	"OrderMethodAndVisibility"
+	"MergeNamespaceWithOpenTag"
+	"AllmanStyleBraces"
+	"NewLineBeforeReturn"
+	"RemoveIncludeParentheses"
+	"PHPDocTypesToFunctionTypehint"
+	"PrettyPrintDocBlocks"
+	"RemoveSemicolonAfterCurly"
+	"RemoveUseLeadingSlash"
+	"ShortArray"
+	"SortUseNameSpace"
+	"SpaceBetweenMethods"
+]
+psr1: false
+psr1Naming: false
+psr2: false
+settersAndGettersType: "disabled"
+visibilityOrder: true
+yodaStyle: false

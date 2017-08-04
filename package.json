@@ -1,0 +1,35 @@
+{
+  "name": "phpf",
+  "main": "./lib/index",
+  "version": "1.0.0",
+  "description": "phpF",
+  "keywords": [
+    "phpf",
+    "php",
+    "formater",
+    "fixer",
+    "formatter",
+    "pretty printer",
+    "phpfmt",
+    "php.tools",
+    "psr1",
+    "psr2",
+    "psr"
+  ],
+  "activationCommands": {
+    "atom-workspace": [
+      "phpf:format",
+      "phpf:create-project-config"
+    ]
+  },
+  "repository": "https://github.com/fyrebase/atom-phpf",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.50",
+    "php": ">=5.6"
+  },
+  "dependencies": {
+    "fs-extra": "^4.0.1",
+    "season": "^6.0.0"
+  }
+}

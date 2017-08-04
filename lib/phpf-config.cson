@@ -1,0 +1,106 @@
+setup:
+	order: 1
+	title: "Setup"
+	type: "object"
+	properties:
+		phpPath:
+			default: "php"
+			description: "The full path to your local `php` executable"
+			order: 1
+			title: "PHP Path"
+			type: "string"
+		fmtPath:
+			default: "fmt.phar"
+			description: "The full path to `phpfmt` phar archive. Available [here](https://github.com/nanch/phpfmt_stable) and [here](https://github.com/subins2000/phpF)"
+			order: 2
+			title: "Phpfmt Path"
+			type: "string"
+general:
+	order: 2
+	title: "Formatting Options"
+	type: "object"
+	properties:
+		autoAlign:
+			default: "false"
+			description: "Auto align of ST_EQUAL and T_DOUBLE_ARROW"
+			order: 1
+			title: "Auto align"
+			type: "boolean"
+		constructorType:
+			default: "disabled"
+			description: "Analyse classes for attributes and generate constructor"
+			enum: [
+				"disabled"
+				"camel"
+				"snake"
+				"golang"
+			]
+			order: 2
+			title: "Constructor type"
+			type: "string"
+		indentWithSpaceSize:
+			default: "2"
+			description: "Use spaces instead of tabs for indentation, the number of spaces to replace tabs with"
+			order: 3
+			title: "Indent with spaces"
+			type: "integer"
+		passes:
+			default: ""
+			description: "A comma separated list of passes to transform your PHP. See [here](https://github.com/dericofilho/sublime-phpfmt#currently-supported-transformations) for a complete list or run `php /path/to/fmt.phar --list`"
+			order: 4
+			title: "Passes"
+			type: "string"
+		excludePasses:
+			default: ""
+			description: "A comma separated list of passes to exclude. See [here](https://github.com/dericofilho/sublime-phpfmt#currently-supported-transformations) for a complete list"
+			order: 5
+			title: "Excluded passes"
+			type: "string"
+		cakePhp:
+			default: "false"
+			description: "Apply CakePHP coding style"
+			order: 6
+			title: "Cake PHP style"
+			type: "boolean"
+		psr1:
+			default: "false"
+			description: "Activate PSR1 style"
+			order: 7
+			title: "PSR1"
+			type: "boolean"
+		psr1Naming:
+			default: "false"
+			description: "Activate PSR1 style - Section 3 and 4.3 - Class and method names case"
+			order: 8
+			title: "PSR1 naming style"
+			type: "boolean"
+		psr2:
+			default: "false"
+			description: "Activate PSR2 style"
+			order: 9
+			title: "PSR2"
+			type: "boolean"
+		settersAndGettersType:
+			default: "disabled"
+			description: "Analyse classes for attributes and generate setters and getters"
+			enum: [
+				"disabled"
+				"camel"
+				"snake"
+				"golang"
+			]
+			order: 10
+			title: "Setters and getters"
+			type: "string"
+		visibilityOrder:
+			default: "false"
+			description: "Fixes visibiliy order for method in classes - PSR-2 4.2"
+			order: 11
+			title: "Visibiliy order"
+			type: "boolean"
+		yodaStyle:
+			default: "false"
+			description: "Yoda-style comparisons"
+			order: 12
+			title: "Yoda style"
+			type: "boolean"
