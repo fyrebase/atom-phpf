@@ -7,7 +7,7 @@ autoAlign: true
 cakePhp: false
 constructorType: "disabled"
 excludePasses: ""
-indentWithSpaceSize: 2 # false to disable
+indentWithSpaceSize: 2
 passes: [
 	# SAMPLE PASSES
 	# ----------------
