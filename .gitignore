@@ -1,4 +1,4 @@
 .DS_Store
-/test.php
+tests
 /phpf.cson
-node_modules/
+node_modules

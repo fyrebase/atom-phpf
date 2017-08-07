@@ -3,36 +3,50 @@
 # The below will override any options
 # found in the phpF package settings panel
 
-autoAlign: true
-cakePhp: false
-constructorType: "disabled"
-excludePasses: ""
-indentWithSpaceSize: 2
-passes: [
-	# SAMPLE PASSES
-	# ----------------
-	# Find out what passess your copy of
-	# phpfmt supports with `php /path/to/fmt.phar --list`
-	"ReindentSwitchBlocks"
-	"OrganizeClass"
-	"OrderMethod"
-	"OrderAndRemoveUseClauses"
-	"OrderMethodAndVisibility"
-	"MergeNamespaceWithOpenTag"
-	"AllmanStyleBraces"
-	"NewLineBeforeReturn"
-	"RemoveIncludeParentheses"
-	"PHPDocTypesToFunctionTypehint"
-	"PrettyPrintDocBlocks"
-	"RemoveSemicolonAfterCurly"
-	"RemoveUseLeadingSlash"
-	"ShortArray"
-	"SortUseNameSpace"
-	"SpaceBetweenMethods"
-]
-psr1: false
-psr1Naming: false
-psr2: false
-settersAndGettersType: "disabled"
-visibilityOrder: true
-yodaStyle: false
+phpfmt:
+	autoAlign: true
+	cakePhp: false
+	constructorType: "disabled"
+	excludePasses: [
+		# SAMPLE EXCLUDED PASSES
+		# ----------------
+		# Find out what passess your copy of
+		# phpfmt supports with `php /path/to/fmt.phar --list`
+		"OrderMethod"
+	]
+	indentWithSpaceSize: 2
+	passes: [
+		# SAMPLE PASSES
+		# ----------------
+		# Find out what passess your copy of
+		# phpfmt supports with `php /path/to/fmt.phar --list`
+		"ReindentSwitchBlocks"
+		"OrganizeClass"
+		"OrderAndRemoveUseClauses"
+		"OrderMethodAndVisibility"
+		"MergeNamespaceWithOpenTag"
+		"AllmanStyleBraces"
+		"NewLineBeforeReturn"
+		"RemoveIncludeParentheses"
+		"PHPDocTypesToFunctionTypehint"
+		"PrettyPrintDocBlocks"
+		"RemoveSemicolonAfterCurly"
+		"RemoveUseLeadingSlash"
+		"ShortArray"
+		"SortUseNameSpace"
+		"SpaceBetweenMethods"
+	]
+	psr1: false
+	psr1Naming: false
+	psr2: false
+	settersAndGettersType: "disabled"
+	visibilityOrder: true
+	yodaStyle: false
+
+general:
+	exclude: [
+		# SAMPLE EXCLUDE GLOBS
+		# ----------------
+		"/vendor/**/*",
+		"/index.php"
+	]

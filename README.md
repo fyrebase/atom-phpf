@@ -1,12 +1,18 @@
-# PhpF <small>Atom php beautifier :sparkles:</small>
+# PhpF:sparkles:
 
-**PhpF** will have your code looking polished in no time.
+**PhpF** is a package for Atom which will have your code looking polished in no time.
 
 Simply configure it to your desired standards and your bad code formatting anxiety will fade away*..
 
 ### Project Overrides
 
-Create custom formatting standards per project. Run the **PhpF Create Project Config** command from the menu or command palette to quickly customise your project settings!
+Create custom formatting standards per project. Run the **PhpF Create Project Config** command from the menu or command palette to quickly generate a `phpf.cson` project configuration file in your project root. Customise your project settings and commit them to your repo to share amongst your team!
+
+**Note:** All options in the package settings screen will be overridden by those specified in the `phpf.cson` project configuration file
+
+### Exclude Files / Directories
+
+PhpF allows you to exclude files and directories from being formatted. Just throw them in the project config or the settings screen!
 
 ## Requirements
 
@@ -31,3 +37,19 @@ Drop it somewhere like `/usr/local/bin` and add the path to the **PhpF** package
 <small><small>*Hopefully, fingers crossed, no guarantees</small></small>
 
 
+## Changelog
+
+
+### 0.1.3 -- 07/08/2017
+
+* **[Added]** `phpf.cson` project configuration file validation
+* **[Added]** Ability to exclude files / folders via globbing within settings panel and `phpf.cson` project configuration file
+* **[Improved]** Cleaned up README.md
+
+### 0.1.2 -- 04/08/2017
+
+* **[Improved]** Cleaned up project configuration template
+
+### 0.1.1 -- 04/08/2017
+
+* **[Improved]** Updated project description
