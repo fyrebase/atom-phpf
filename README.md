@@ -40,11 +40,19 @@ Drop it somewhere like `/usr/local/bin` and add the path to the **PhpF** package
 ## Changelog
 
 
-### 0.1.3 -- 07/08/2017
+### 1.0.2 -- 08/08/2017
+
+* **[Fixed]** Fixed `README.md` and package version
+
+### 1.0.1 -- 08/08/2017
+
+* **[Fixed]** Fixed issue when installing package or creating a project configuration file and no project root existed
+
+### 1.0.0 -- 08/08/2017
 
 * **[Added]** `phpf.cson` project configuration file validation
 * **[Added]** Ability to exclude files / folders via globbing within settings panel and `phpf.cson` project configuration file
-* **[Improved]** Cleaned up README.md
+* **[Improved]** Cleaned up `README.md`
 
 ### 0.1.2 -- 04/08/2017
 
