@@ -1,7 +1,7 @@
 {
   "name": "phpf",
   "main": "./lib/index",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "PHP formatting - PhpF is a phpfmt wrapper with project overrides..",
   "keywords": [
     "phpf",
