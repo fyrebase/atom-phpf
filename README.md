@@ -40,6 +40,10 @@ Drop it somewhere like `/usr/local/bin` and add the path to the **PhpF** package
 ## Changelog
 
 
+### 1.0.3 -- 09/08/2017
+
+* **[Fixed]** Fixed bug in project config file validation when `phpf.cson` is not present
+
 ### 1.0.2 -- 08/08/2017
 
 * **[Fixed]** Fixed `README.md` and package version
